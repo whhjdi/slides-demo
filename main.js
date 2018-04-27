@@ -24,7 +24,7 @@ function x(n){
 }
 function initState(){
     n = 1
-    $(`.imgs>img:nth-child(${x(n)})`).addClass('current')
+    getImage(n).addClass('current')
         .siblings().addClass('enter')
 }
 function makeLeave($node){
