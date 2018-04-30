@@ -7,23 +7,11 @@
     overflow: hidden;
 }
 .imgs{
-    position: relative;
+    display: flex;
+    transition: all 0.3s;
 }
 .imgs>img {
     width:100%;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
+    
 }
-.imgs>img.current{
-    left: 0;
-    transform: translateX(0);
-    z-index: 1;
-}
-.imgs>img.leave{
-    transform: translateX(-100%);
-    z-index:1;
-}
-.imgs>img.enter{
-    transform: translateX(100%);
-}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-hans">
+
 <head>
     <script src="./jQuery.js"></script>
     <meta charset="UTF-8">
@@ -8,17 +9,35 @@
     <title>无缝轮播</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="window">
-        <div class="imgs">
-            <img src="./imgs/5.png" alt="图片5" >
-            <img src="./imgs/4.png" alt="图片4" >
-            <img src="./imgs/3.png" alt="图片3" >
-            <img src="./imgs/2.png" alt="图片2" >
-            <img src="./imgs/1.png" alt="图片1" >
-        </div>        
+    <div class="container">
+        <div class="window">
+            <div class="imgs" id="slides">
+                <img src="./imgs/1.png" alt="图片1">
+                <img src="./imgs/2.png" alt="图片2">
+                <img src="./imgs/3.png" alt="图片3">
+                <img src="./imgs/4.png" alt="图片4">
+                <img src="./imgs/5.png" alt="图片5">
+            </div>
+
+        </div>
+        <div id="controls" style="text-align: center;">
+            <button id="previous">上一张</button>
+            <button id="next">下一张</button>
+        </div>
+        <div style="text-align: center;" id="buttonWrapper">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+        </div>
     </div>
+
+
     <script src="./main.js"></script>
-    
+
 </body>
+
 </html>
